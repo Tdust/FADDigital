@@ -4,8 +4,8 @@ import android.content.Context
 import android.widget.Button
 import android.widget.Toast
 
-class BotaoIndice constructor(var c: Context ,var bt : Button){
-    fun onClick(){
-        Toast.makeText(c, "Funciona", Toast.LENGTH_SHORT).show()
+class BotaoIndice(context: Context?) : Button(context) {
+     fun onClick(){
+        Toast.makeText(context, "Funciona", Toast.LENGTH_SHORT).show()
     }
 }

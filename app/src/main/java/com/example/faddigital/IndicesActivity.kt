@@ -1,12 +1,10 @@
 package com.example.faddigital
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.Toast
 import android.widget.Toast.makeText
+import android.widget.Toast.LENGTH_SHORT
 
 class IndicesActivity : AppCompatActivity() {
 
@@ -22,28 +20,45 @@ class IndicesActivity : AppCompatActivity() {
         val btD2: Button = findViewById(R.id.btD2)
         val btE: Button = findViewById(R.id.btE)
         val btTrata: Button = findViewById(R.id.btTratamento)
-        var btfim :BotaoIndice = BotaoIndice(this, btFecha)
 
         btFecha.setOnClickListener()
-            {
-                btfim.onClick()
-            }
+        {
+            makeText(this, "Vai fechar nada não", LENGTH_SHORT).show()
+        }
+        btA1.setOnClickListener()
+        {
+            makeText(this, "Categoria A1", LENGTH_SHORT).show()
+        }
+        btA2.setOnClickListener()
+        {
+            makeText(this, "Categoria A2", LENGTH_SHORT).show()
+        }
+        btB.setOnClickListener()
+        {
+            makeText(this, "Categoria B", LENGTH_SHORT).show()
+        }
+        btC.setOnClickListener()
+        {
+            makeText(this, "Categoria C", LENGTH_SHORT).show()
+        }
+        btD1.setOnClickListener()
+        {
+            makeText(this, "Categoria D1", LENGTH_SHORT).show()
+        }
+        btD2.setOnClickListener()
+        {
+            makeText(this, "Marcelo D2, lixo!", LENGTH_SHORT).show()
+        }
+        btE.setOnClickListener()
+        {
+            makeText(this, "ÉÉÉÉÉ", LENGTH_SHORT).show()
+        }
+        btTrata.setOnClickListener()
+        {
+            makeText(this, "Toma seu remédio", LENGTH_SHORT).show()
         }
 
-/*    override fun onClick(p0: View?) {
-        var texto = when(p0?.getId())
-        {
-            R.id.btA2 -> "Adicionado deposito A1"
-            R.id.btA2 -> "Adicionado deposito A"
-            R.id.btB -> "Adicionado deposito B"
-            R.id.btC -> "Adicionado deposito C"
-            R.id.btD1 -> "Adicionado deposito D1"
-            R.id.btD2 -> "Adicionado deposito D2"
-            R.id.btE -> "Adicionado deposito E"
-            R.id.btTratamento -> "Aopersistiremossintomas,omedicodeveraserconsultado"
-            R.id.btFechamento -> "Eh nois e a gente"
-            else -> "Comassim?"
-        }
-        Toast.makeText(this, ""+texto, Toast.LENGTH_SHORT).show()
-    }*/
+    }
+
+/*    */
 }
