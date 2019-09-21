@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.Toast
 import android.widget.Toast.makeText
 
-class IndicesActivity : AppCompatActivity(), View.OnClickListener {
+class IndicesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,10 +22,15 @@ class IndicesActivity : AppCompatActivity(), View.OnClickListener {
         val btD2: Button = findViewById(R.id.btD2)
         val btE: Button = findViewById(R.id.btE)
         val btTrata: Button = findViewById(R.id.btTratamento)
+        var btfim :BotaoIndice = BotaoIndice(this, btFecha)
 
+        btFecha.setOnClickListener()
+            {
+                btfim.onClick()
+            }
         }
 
-    override fun onClick(p0: View?) {
+/*    override fun onClick(p0: View?) {
         var texto = when(p0?.getId())
         {
             R.id.btA2 -> "Adicionado deposito A1"
@@ -40,5 +45,5 @@ class IndicesActivity : AppCompatActivity(), View.OnClickListener {
             else -> "Comassim?"
         }
         Toast.makeText(this, ""+texto, Toast.LENGTH_SHORT).show()
-    }
+    }*/
 }
